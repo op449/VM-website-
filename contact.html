@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Quantum Growth</title>
+    <meta name="description" content="Secure your city before your competition does.">
+    <link rel="stylesheet" href="styles.css?v=5">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+</head>
+
+<body class="dark-theme">
+
+    <nav class="nexa-nav">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">
+                <svg viewBox="0 0 24 24" width="24" height="24">
+                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" stroke="#fff" stroke-width="2"
+                        fill="none" />
+                </svg>
+                <span>Quantum Growth</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#about">About</a>
+                <a href="index.html#services">System</a>
+                <a href="index.html#works">Packages</a>
+            </div>
+            <a href="index.html" class="btn-pill outline">Back Home ↗</a>
+        </div>
+    </nav>
+
+    <!-- Ambient Mouse Glow -->
+    <div class="ambient-glow"></div>
+    <div class="aurora-bg" style="top: 20%;"></div>
+
+    <section class="section-padding relative"
+        style="min-height: 100vh; display: flex; align-items: center; justify-content: center;">
+        <div class="container"
+            style="width: 100%; max-width: 700px; display: flex; flex-direction: column; align-items: center; z-index: 10;">
+
+            <div class="text-center mb-12 reveal-up">
+                <span class="eyebrow">[ FREE STRATEGY SESSION ]</span>
+                <h1 class="huge-title mt-4" style="font-size: 3.5rem;">Secure Your City.</h1>
+                <p class="text-body mt-4">We only work with ONE operator per territory. Enter your details below to
+                    check availability.</p>
+            </div>
+
+            <div class="contact-box reveal-up" style="animation-delay: 0.1s;">
+                <!-- Web3Forms Form Configuration -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="qg-form">
+                    <!-- Replace with your Access Key -->
+                    <input type="hidden" name="access_key" value="adfebaab-b06f-496b-a209-e7232b7b1730">
+
+                    <div class="form-grid">
+                        <div class="input-group">
+                            <label>First Name</label>
+                            <input type="text" name="first_name" required placeholder="John">
+                        </div>
+                        <div class="input-group">
+                            <label>Last Name</label>
+                            <input type="text" name="last_name" required placeholder="Doe">
+                        </div>
+                    </div>
+
+                    <div class="input-group">
+                        <label>Business Email</label>
+                        <input type="email" name="email" required placeholder="john@concretepros.com">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Territory (City, State)</label>
+                        <input type="text" name="city" required placeholder="e.g. Austin, TX">
+                    </div>
+
+                    <div class="input-group">
+                        <label>Current Monthly Revenue</label>
+                        <select name="revenue" required>
+                            <option value="" disabled selected>Select an option</option>
+                            <option value="Under $20k">Under $20,000</option>
+                            <option value="$20k - $50k">$20,000 - $50,000</option>
+                            <option value="$50k - $100k">$50,000 - $100,000</option>
+                            <option value="$100k+">$100,000+</option>
+                        </select>
+                    </div>
+
+                    <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+                    <input type="hidden" name="redirect" value="https://web3forms.com/success">
+
+                    <button type="submit" class="btn-pill primary mt-6 form-submit glow-hover">Request Territory Audit
+                        ↗</button>
+                    <p class="text-muted text-sm text-center mt-4">*No commitment required. If your city is taken, we
+                        will notify you immediately.</p>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <script src="script.js?v=5"></script>
+</body>
+
+</html>
